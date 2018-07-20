@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Henelllis/CSS_Natours_Pratice.git"
+  },
+  "author": "Henry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Henelllis/CSS_Natours_Pratice/issues"
+  },
+  "homepage": "https://github.com/Henelllis/CSS_Natours_Pratice",
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  }
+}
