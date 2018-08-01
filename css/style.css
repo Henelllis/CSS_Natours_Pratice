@@ -130,6 +130,12 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase; }
+  @media (max-width: 56.25em) {
+    .heading-tertiary {
+      font-size: 1.5rem; } }
+  @media (max-width: 37.5em) {
+    .heading-tertiary {
+      font-size: 1.4rem; } }
 
 .paragraph {
   font-size: 1.6rem; }
@@ -141,6 +147,9 @@ body {
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem !important; }
+  @media (max-width: 56.25em) {
+    .u-margin-bottom-small {
+      margin-bottom: .5rem !important; } }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important; }
@@ -359,7 +368,8 @@ body {
         left: 0%;
         transform: translate(0);
         width: 100%;
-        padding: 7rem 4rem 4rem 4rem; }
+        padding: 7rem 4rem 4rem 4rem;
+        text-align: center; }
       .card__price-box {
         margin-bottom: 3rem; }
       .card__price-value {
@@ -541,23 +551,38 @@ body {
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.3);
     transition: all .4s .2s; }
+    @media (max-width: 56.25em) {
+      .popup__content {
+        display: table;
+        padding-bottom: 2rem; } }
   .popup__left {
     width: 33.3333333333333%;
     display: table-cell; }
     @media (max-width: 56.25em) {
       .popup__left {
-        display: none; } }
+        display: table-row;
+        overflow: visible; } }
   .popup__right {
     width: 66.6666666666666667%;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem; }
+    @media (max-width: 56.25em) {
+      .popup__right {
+        width: 100%;
+        display: table-row;
+        padding: 2rem 3rem;
+        text-align: center; } }
   .popup__img {
     display: block;
     width: 100%; }
     @media (max-width: 56.25em) {
       .popup__img {
-        display: block; } }
+        vertical-align: auto;
+        display: inline-block;
+        height: 10%; }
+        .popup__img:last-child {
+          display: none; } }
   .popup__text {
     font-size: 1.4rem;
     margin-bottom: 4rem;
@@ -581,7 +606,9 @@ body {
         column-rule: 0;
         -moz-hyphens: 0;
         -ms-hyphens: 0;
-        -webkit-hyphens: none; } }
+        -webkit-hyphens: none;
+        padding: 0 2rem;
+        margin-bottom: 2rem; } }
   .popup:target {
     opacity: 1;
     visibility: visible; }
@@ -598,6 +625,9 @@ body {
     display: inline-block;
     transition: all .3s;
     line-height: 1; }
+    @media (max-width: 56.25em) {
+      .popup__close:link, .popup__close:visited {
+        top: 1.5rem; } }
   .popup__close:hover {
     color: #55c57a; }
 
